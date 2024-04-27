@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "RUDPWebServer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "RUDPClient::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RUDPClient-Debug-6f9e008740359678444b.json",
+					"name" : "RUDPClient",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "RUDPServer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RUDPServer-Debug-5ee95326529a1dc5fdfa.json",
+					"name" : "RUDPServer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TCPClient::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TCPClient-Debug-14407b0fc98844a788d0.json",
+					"name" : "TCPClient",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TCPServer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TCPServer-Debug-cdaea36a95c06eed5edd.json",
+					"name" : "TCPServer",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/hfzhou/CLionProjects/RUDPWebServer/cmake-build-debug",
+		"source" : "/home/hfzhou/CLionProjects/RUDPWebServer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
