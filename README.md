@@ -1,0 +1,5 @@
+此仓库是对[我的RUDP协议](https://github.com/zhf999/ReliableUDP)的测试程序，建议使用CLion打开整个项目。
+
+项目中共有四个可执行程序的代码，其中RUPDSevrer和RUDPClient是分别是利用RUDP协议实现的模拟Web服务端和客户端，TCPserver和TCPClient同理。
+
+此项目主要希望通过模拟用户进行浏览网页的过程，测试客户端对服务端发起若干次并获得网页资源请求所需时间，以对比RUDP和TCP之间的性能。

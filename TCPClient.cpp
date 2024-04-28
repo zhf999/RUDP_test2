@@ -3,6 +3,7 @@
 //
 #include "utils.h"
 #include <iostream>
+#include <sys/time.h>
 int main()
 {
     sockaddr_in addr;
@@ -10,7 +11,8 @@ int main()
 
     char fileName[30];
     char buf[4096];
-    long start_time = clock();
+    timeval start,end;
+    gettimeofday(&start, nullptr);
     for(int i=0;i<CONNECT_TIMES;i++)
     {
         int res ;
@@ -33,7 +35,8 @@ int main()
         shutdown(servSock,SHUT_RDWR);
         close(servSock);
     }
-    long end_time = clock();
-    printf("cost time:%ld\n",end_time-start_time);
+    gettimeofday(&end, nullptr);
+    double cost = end.tv_sec-start.tv_sec + 1.0*(end.tv_usec-start.tv_usec)/1000000.0;
+    printf("cost time:%lf\n",cost);
     return 0;
 }
